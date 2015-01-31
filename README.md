@@ -20,5 +20,3 @@ __[Live version can be found here](conversionista.github.io/css-to-jquery-conver
 ##Notes
 The PHP file is now hosted on [http://api.conversionista.se/css/css2.php](http://api.conversionista.se/css/css2.php)
 
-also, the `ZeroClipboard.swf` file has to be copied to the scripts folder manually
-
