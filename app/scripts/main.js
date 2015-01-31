@@ -1,7 +1,7 @@
 (function(){
   
   
-  var URL = 'http://apps.conversionista.se/css-to-jquery-converter/css2.php';
+  var URL = 'http://api.conversionista.se/css/css2.php';
   // var URL = 'http://localhost:8000/css.php';
 
   $(document).ready(function() {
