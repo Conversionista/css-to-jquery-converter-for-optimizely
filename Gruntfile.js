@@ -434,8 +434,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'buildcontrol',
-    'htmlmin'
+    'htmlmin',
+    'buildcontrol'
     
   ]);
 
