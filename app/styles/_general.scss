@@ -32,7 +32,7 @@ $blue-color:  #3498db;
 $red-color:   #c61618;
 $theme-color: $red-color;
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
+@import url(//fonts.googleapis.com/css?family=Lato:300,700);
 $font-family-sans-serif:    'Lato', sans-serif!default;
 
 @mixin cGradient($g1c,$g2c,$g1,$g2){
