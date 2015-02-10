@@ -39,8 +39,7 @@
 
     ga('send', 'pageview');
     </script>
-    
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -65,27 +64,29 @@
       
       <div class="row marketing">
   <div class="col-lg-6">
-    <form method="post" role="form" id="sourceForm">
+    <!-- <form method="post" role="form" id="sourceForm"> -->
       
       <div class="form-group">
         <label for="css" class="control-label">CSS</label>
-        <textarea name="css" class="form-control" rows="8" placeholder="Put your CSS Code here:"></textarea>
+        <div id="css"></div>
+        <!-- <textarea name="x" class="form-control language-css" id="css" rows="8" placeholder="Put your CSS Code here:">123182737128</textarea> -->
       </div>
-      <button type="submit" class="btn btn-primary">Convert</button>
-    </form>
+      <button id="convert" class="btn btn-primary">Convert</button>
+    <!-- </form> -->
   </div>
   <div class="col-lg-6">
     <div class="form-group">
       <label for="jQuery" class="control-label">jQuery</label>
-      <textarea id="jqueryCSS" name="jQuery" class="form-control" rows="8" placeholder="Your CSS Code will be outputted here as jQuery" readonly></textarea>
+      <div id="jquery" class=""></div>
+      <!-- <textarea id="jqueryCSS" name="jQuery" class="language-js form-control" rows="8" placeholder="Your CSS Code will be outputted here as jQuery" readonly></textarea> -->
     </div>
-    <button id="copyjQuery" data-clipboard-target="jqueryCSS" class="btn btn-success">Copy</button>
+    <button id="copyjQuery" class="btn btn-success">Copy</button>
   </div>
 </div>
 </div>      
   <footer class="footer">
     <div class="container">
-      <p class="text-muted"><span class="glyphicon glyphicon-heart"></span> from the Conversionista! team | <a href="https://github.com/Conversionista/css-to-jquery-converter/issues" target="_blank">Report a bug or an issue</a></p>
+      <p class="text-muted"><span class="glyphicon glyphicon-heart"></span> from the <a href="//conversionista.se" target="_blank">Conversionista!</a> team | <a href="https://github.com/Conversionista/css-to-jquery-converter/issues" target="_blank">Report a bug or an issue</a></p>
     </div>
   </footer>
 
@@ -109,6 +110,7 @@
     <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="bower_components/ace-builds/src/ace.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
