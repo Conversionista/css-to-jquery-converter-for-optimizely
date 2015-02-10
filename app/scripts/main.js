@@ -1,7 +1,7 @@
 (function(){
   
   
-  var URL = 'http://api.conversionista.se/css/css2.php';
+  var URL = 'https://api.conversionista.se/css/css2.php';
   // var URL = 'http://localhost:8000/css.php';
 
   $(document).ready(function() {
@@ -25,8 +25,8 @@
 
       .done(function(data) {
           
-        console.log(data[3]);
-        console.log(data);
+        // console.log(data[3]);
+        // console.log(data);
         // console.log(data.success);
 
         // message = data.message;
