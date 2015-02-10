@@ -343,6 +343,12 @@ module.exports = function (grunt) {
             'styles/fonts/{,*/}*.*'
           ]
         }, {
+          src: 'bower_components/ace-builds/src/worker-css.js',
+          dest: '<%= config.dist %>/worker-css.js'
+        }, {
+          src: 'bower_components/ace-builds/src/worker-javascript.js',
+          dest: '<%= config.dist %>/worker-javascript.js'
+        }, {
           src: 'bower_components/zeroclipboard/dist/ZeroClipboard.swf',
           dest: '<%= config.dist %>/scripts/ZeroClipboard.swf'
         },{
@@ -423,6 +429,22 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build', [
+    'clean:dist',
+    'wiredep',
+    'useminPrepare',
+    'concurrent:dist',
+    'autoprefixer',
+    'concat',
+    'cssmin',
+    'uglify',
+    'copy:dist',
+    'rev',
+    'usemin',
+    'htmlmin'
+    
+  ]);
+
+  grunt.registerTask('deploy', [
     'clean:dist',
     'wiredep',
     'useminPrepare',
