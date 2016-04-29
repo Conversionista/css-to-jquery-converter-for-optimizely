@@ -7,7 +7,7 @@
   e2.setTheme('ace/theme/github');
   e2.getSession().setMode('ace/mode/javascript');
 
-  
+
   var URL = 'https://api.conversionista.se/css/css2.php';
   // var URL = 'http://localhost:8000/css.php';
 
@@ -48,7 +48,7 @@
         // console.log(data.success);
 
         // message = data.message;
-      
+
         // if (data.success !== true) {
 
           // showStatusMessage('danger', message);
@@ -57,20 +57,20 @@
             // var str = "$('head').append('<style>" + data + "</style>');";
             // $('#jquery').text(str);
           // } else {
-            // console.warn(data);  
+            // console.warn(data);
           // }
-          
-          
+
+
 
 
         // } else {
 
-          
+
 
         //   //showStatusMessage('success', message);
         //   delete data.success;
         //   delete data.message;
-        var str = '$("head").append("<style>' + data + '</style>");';
+        var str = '$(\'head\').append(\'<style>' + data + '</style>\');';
         str = str.replace(/\s+/g, '');
         // str = str.replace(/[\t\v\f\r \u00a0\u2000-\u200b\u2028-\u2029\u3000]+/g, '');
         e2.setReadOnly(true);
